@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviation Consultant | Flight Operations & Systems Engineering</title>
+    <style>
+        :root {
+            --primary: #0f172a; /* Navy Blue */
+            --secondary: #3b82f6; /* Aviation Blue */
+            --light: #f8fafc;
+            --text: #334155;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            color: var(--text);
+            line-height: 1.6;
+            background-color: var(--light);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--secondary);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            color: #cbd5e1;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--primary);
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+            margin: 10px auto 0;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .text-box h3 {
+            color: var(--primary);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .text-box p {
+            margin-bottom: 1rem;
+        }
+
+        .text-box ul {
+            list-style-position: inside;
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+        }
+
+        .text-box li {
+            margin-bottom: 0.5rem;
+        }
+
+        .image-box img {
+            width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            object-fit: cover;
+            height: 350px;
+        }
+
+        .services-wrapper {
+            background-color: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            margin-bottom: 4rem;
+        }
+
+        .services-wrapper h3 {
+            color: var(--secondary);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .contact-section {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .contact-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-details {
+            font-size: 1.2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .contact-details a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--secondary);
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .contact-details a:hover {
+            background: var(--secondary);
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #020617;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .reverse-mobile .image-box {
+                order: -1;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Aviation & Systems Consulting</h1>
+        <p>40 Years of Aviation Excellence. Bridging the gap between the cockpit, the hangar, and the circuit board.</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">Professional Background</h2>
+        
+        <div class="grid-2">
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1596400780287-6c2e3919e99a?q=80&w=1000&auto=format&fit=crop" alt="King Air Aircraft">
+            </div>
+            <div class="text-box">
+                <h3>A Lifetime in Aviation</h3>
+                <p>With four decades of active flying experience, my perspective encompasses every angle of the aviation industry. I hold a Bachelor of Science in Aviation Engineering from The Ohio State University and serve as a Multi-Engine Flight Instructor (MEI) and King Air pilot.</p>
+                <p>My technical foundation was built as an aircraft electrician in the United States Marine Corps. Today, I hold an active A&P certificate and am FAA-approved to maintain critical infrastructure, including multiple NAVAIDs, Instrument Landing Systems (ILS), RNAV, and AWOS weather systems.</p>
+            </div>
+        </div>
+
+        <div class="grid-2 reverse-mobile">
+            <div class="text-box">
+                <h3>Hardware Engineering & PCB Design</h3>
+                <p>Currently, I specialize in aviation-centric electronic systems design, combining my operational flight experience with deep electrical engineering capabilities. Whether the goal is improving General Aviation flight training or prototyping custom avionics interfaces, I offer full-lifecycle hardware development.</p>
+                <ul>
+                    <li><strong>Custom PCB Design:</strong> Schematic capture and board layout utilizing industry-standard tools like KiCad.</li>
+                    <li><strong>Mechanical & 3D Modeling:</strong> Custom enclosure and component design using FreeCAD.</li>
+                    <li><strong>Avionics Communications:</strong> Implementation and testing of avionics data buses, including ARINC 429 protocols.</li>
+                    <li><strong>System Building & Testing:</strong> From custom embedded flight data recorders to rigorous bench testing and troubleshooting of physical hardware.</li>
+                </ul>
+            </div>
+            <div class="image-box">
+                <img src="https://images.unsplash.com/photo-1559005934-2eeb2cb2d04a?q=80&w=1000&auto=format&fit=crop" alt="General Aviation Aircraft">
+            </div>
+        </div>
+
+    </div>
+
+    <section class="contact-section">
+        <h2>Ready to discuss your project?</h2>
+        <p style="margin-bottom: 2rem; color: #cbd5e1;">Located in Colorado. Available for consulting, system design, and specialized aviation testing.</p>
+        <div class="contact-details">
+            <a href="tel:6143385466">📞 (614) 338-5466</a>
+            <p>Email setup pending via cfiroger.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Roger - Aviation Consultant. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
